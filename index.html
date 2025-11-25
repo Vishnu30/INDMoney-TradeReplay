@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>INDMoney TradeReplay™ · US Stocks Learning Terminal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="hero-text">
+        <h1>INDMoney TradeReplay™</h1>
+        <p>
+          TradeReplay is a learning sandbox for US stocks. It replays stylised price paths, compares simple strategies,
+          and visualises stress scenarios so users can practice before committing real capital.
+        </p>
+      </div>
+      <div class="hero-meta">
+        <span class="pill pill-live">Concept built to demonstrate PM thinking</span>
+        <span class="pill">Static front‑end · safe mock data · GitHub deployable</span>
+      </div>
+    </header>
+
+    <section class="shell">
+      <nav class="tabs" id="main-tabs">
+        <button class="tab active" data-tab="replay">Replay a Trade</button>
+        <button class="tab" data-tab="compare">Compare Strategies</button>
+        <button class="tab" data-tab="stress">Market Stress Test</button>
+        <button class="tab" data-tab="dca">DCA Visualiser</button>
+      </nav>
+
+      <section class="layout">
+        <div class="left-panel">
+          <article class="card glass" id="control-panel"></article>
+          <article class="card glass soft" id="insight-panel"></article>
+        </div>
+
+        <div class="right-panel">
+          <article class="card glass chart-card">
+            <canvas id="main-chart"></canvas>
+          </article>
+          <article class="card glass grid" id="metrics-grid"></article>
+        </div>
+      </section>
+
+      <section class="bottom-row">
+        <article class="card glass mini" id="mini-tools"></article>
+        <article class="card glass mini" id="nudge-panel"></article>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      This is a static prototype to showcase how I would think about an educational, revenue‑linked trade replay experience
+      for INDMoney. No live prices, no real trades, and no investment advice.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
